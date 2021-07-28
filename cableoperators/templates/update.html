@@ -1,0 +1,11 @@
+<html>
+<head>
+</head>
+<body>
+<form method="POST" class="post-form" action="/cableoperators/update/{{sitiid}}/">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Update</button>
+</form>
+</body>
+</html>

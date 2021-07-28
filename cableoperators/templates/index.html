@@ -1,0 +1,36 @@
+<html>
+<head>
+</head>
+<body>
+Welcome to Python
+<table border="4px">
+    <thead>
+    <th>sitiid</th>
+    <th>name</th>
+    <th>email</th>
+    <th>address</th>
+    <th>gender</th>
+    <th>phone</th>
+    <th>percentage</th>
+    <th>dob</th>
+    </thead>
+{% for i in amplifiers %}
+    <tr>
+        <td>{{i.sitiid}}</td>
+        <td>{{i.name}}</td>
+        <td>{{i.email}}</td>
+        <td>{{i.address}}</td>
+        <td>{{i.gender}}</td>
+        <td>{{i.phone}}</td>
+        <td>{{i.percentage}}</td>
+        <td>{{i.dob}}</td>
+        <td>
+            <a href="/cableoperators/edit/{{i.sitiid}}">edit</a>
+        </td>
+        <td><a href="/cableoperators/delete/{{i.sitiid}}">delete</a></td>
+    </tr>
+{% endfor %}
+</table>
+</body>
+</html>
+

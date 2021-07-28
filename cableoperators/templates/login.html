@@ -1,0 +1,12 @@
+<html>
+<head>
+</head>
+<body>
+<form method="POST" class="post-form" action="/cableoperators/login/">
+    {% csrf_token %}
+    Uname: <input type="text" name="uname">
+    Password: <input type="password" name="password">
+    <button type="submit">Login</button>
+</form>
+</body>
+</html> `
